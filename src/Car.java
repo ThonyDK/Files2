@@ -1,10 +1,12 @@
 public abstract class Car {
     //Atributes
+    String brand;
     String color;
     int nrOfGear;
 
     //The car constructor takes color and nrOfGear as a parameter.
-    public Car(String color, int nrOfGear){
+    public Car(String brand, String color, int nrOfGear){
+        this.brand = brand;
         this.color = color;
         this.nrOfGear = nrOfGear;
 
@@ -13,8 +15,10 @@ public abstract class Car {
     abstract String carPackage();
 
 
-    @Override
+
     public String toString() {
-        return "Color of the car: " + color + "\nNumber of gears: " + nrOfGear;
+        return "Brand: " +
+                "\nColor of the car: " + color +
+                "\nNumber of gears: " + nrOfGear;
     }
 }

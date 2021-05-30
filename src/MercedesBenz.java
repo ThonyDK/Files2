@@ -5,19 +5,19 @@ public class MercedesBenz extends Car {
 
 
     //Constructor
-    public MercedesBenz(String color, int nrOfGear, int Horsepower, int nrOfNewtonmeter) {
-        super(color, nrOfGear);
+    public MercedesBenz(String brand, String color, int nrOfGear, int Horsepower, int nrOfNewtonmeter) {
+        super(brand, color, nrOfGear);
         this.Horsepower = Horsepower;
         this.nrOfNewtonmeter = nrOfNewtonmeter;
 
     }
-    @Override
     String carPackage() {
         return("\nThe car has AMG-package installet.");
     }
     //toString metode
     public String toString() {
-        return "Color of the car: " + color +
+        return  "Brand: " + brand +
+                "\nColor of the car: " + color +
                 "\nNumber of gear: " + nrOfGear +
                 "\nHorsepower: " + Horsepower +
                 "\nNewtonmeter: " + nrOfNewtonmeter +

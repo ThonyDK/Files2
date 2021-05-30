@@ -5,19 +5,19 @@ public class Audi extends Car{
 
 
     //Constructor
-    public Audi(String color, int nrOfGear, int Horsepower, int nrOfNewtonmeter) {
-        super(color,nrOfGear);
+    public Audi(String brand, String color, int nrOfGear, int Horsepower, int nrOfNewtonmeter) {
+        super(brand,color,nrOfGear);
         this.Horsepower = Horsepower;
         this.nrOfNewtonmeter = nrOfNewtonmeter;
 
     }
-    @Override
     String carPackage() {
         return ("\nThe car has S-line-package installet");
     }
     //toString metode
     public String toString() {
-        return "Color of the car: " + color +
+        return  "Brand: " + brand +
+                "\nColor of the car: " + color +
                 "\nNumber of gears: " + nrOfGear +
                 "\nHorsepower: " + Horsepower +
                 "\nNewtonmeter: " + nrOfNewtonmeter +
